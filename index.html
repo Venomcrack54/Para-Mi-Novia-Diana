@@ -2,11 +2,12 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Feliz primer mes, Diana</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <canvas id="heartCanvas"></canvas>
   <div class="container">
     <h1 class="animate-title">Feliz primer mes, Diana 💖</h1>
     <p class="message">
@@ -15,12 +16,20 @@
       Gracias por tu ternura, tu risa y por ser tú. <br /><br />
       Te quiero muchísimo 💕
     </p>
-    <button id="playBtn">🎵 Reproducir música</button>
+    <div class="buttons">
+      <button onclick="playMusic('song1')">🎵 Perfect</button>
+      <button onclick="playMusic('song2')">🎶 Can't Help Falling in Love</button>
+      <button onclick="toggleMusic()">⏸️ Pausar música</button>
+    </div>
   </div>
-  <audio id="bgMusic" loop>
+
+  <audio id="song1" loop>
     <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-    Tu navegador no soporta audio.
   </audio>
+  <audio id="song2" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+  </audio>
+
   <script src="script.js"></script>
 </body>
 </html>
