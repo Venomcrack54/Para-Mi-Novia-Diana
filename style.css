@@ -5,15 +5,23 @@ body {
   background: linear-gradient(to top right, #ffe6f0, #fff0f5);
   height: 100vh;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+canvas#heartCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .container {
+  position: relative;
+  z-index: 1;
   text-align: center;
   max-width: 600px;
-  padding: 20px;
+  margin: 100px auto;
+  padding: 30px;
   background: white;
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -33,8 +41,8 @@ body {
   line-height: 1.6;
 }
 
-#playBtn {
-  margin-top: 20px;
+.buttons button {
+  margin: 10px 10px 0 10px;
   padding: 10px 20px;
   font-size: 1rem;
   background-color: #d63384;
@@ -45,7 +53,7 @@ body {
   transition: background-color 0.3s;
 }
 
-#playBtn:hover {
+.buttons button:hover {
   background-color: #ad2670;
 }
 
