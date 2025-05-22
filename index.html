@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Primer Mes Juntos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="heart-container"></div>
+
+  <div class="photo photo-left">
+    <img src="https://raw.githubusercontent.com/venomcrack54/Primer-Mes/main/Primera.jpg" alt="Foto 1" />
+  </div>
+  <div class="photo photo-right">
+    <img src="https://raw.githubusercontent.com/venomcrack54/Primer-Mes/main/Segunda.jpg" alt="Foto 2" />
+  </div>
+
+  <div class="container">
+    <h1>Feliz primer mes, Diana 💖</h1>
+    <p>Gracias por hacer de este mes algo tan especial. Te amo con el alma.</p>
+    <button onclick="document.getElementById('song1').play()">Reproducir canción</button>
+    <button onclick="document.getElementById('song1').pause()">Pausar canción</button>
+  </div>
+
+  <audio id="song1" loop>
+    <source src="machupicchu.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
