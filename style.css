@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to top right, #ffe6f0, #fff0f5);
+  height: 100vh;
+  overflow: hidden;
+}
+
+canvas#heartCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.animate-title {
+  font-size: 2.5rem;
+  color: #d63384;
+  margin-bottom: 1rem;
+  animation: pop 1.5s ease forwards;
+}
+
+.message {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.buttons button {
+  margin: 10px 10px 0 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #d63384;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #ad2670;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

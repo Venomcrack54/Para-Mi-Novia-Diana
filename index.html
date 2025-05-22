@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feliz primer mes, Diana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="heartCanvas"></canvas>
+  <div class="container">
+    <h1 class="animate-title">Feliz primer mes, Diana 💖</h1>
+    <p class="message">
+      Desde que llegaste a mi vida, cada día es más bonito. <br />
+      Este primer mes a tu lado ha sido mágico. <br />
+      Gracias por tu ternura, tu risa y por ser tú. <br /><br />
+      Te quiero muchísimo 💕
+    </p>
+    <div class="buttons">
+      <button onclick="playMusic()">🎵 Reproducir canción</button>
+      <button onclick="toggleMusic()">⏸️ Pausar música</button>
+    </div>
+  </div>
+
+  <audio id="song1" loop>
+    <source src="https://dl.dropboxusercontent.com/scl/fi/69yxfl9puftk0z5ro4m9s/Camilo-ft-Evaluna-Montaner-Machu-Picchu.mp3?rlkey=w4rmqe2h58bhzyl3ge8q8qu7d&dl=0" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
